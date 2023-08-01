@@ -29,6 +29,9 @@ function clock() {
     if (second.textContent < 10) {
         second.textContent = "0" + date.getSeconds();
     }
+    time.insertAdjacentHTML("beforeend", `
+    <span id="years">${year}</span>-<span id="monthes">${month}</span>-<span id="days">${day}</span>-<span id="hours">${hour}</span>-<span id="minutes">${minute}</span>-<span id="seconds">${second}</span>
+    `);
 }
 
 clock();
