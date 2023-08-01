@@ -4,7 +4,7 @@ function clock() {
     let date = new Date();
     let year = date.getFullYear();
     let month = date.getMonth();
-    let day = date.getDay();
+    let day = date.getDate();
     let hour = date.getHours();
     let minute = date.getMinutes();
     let second = date.getSeconds();
@@ -13,7 +13,7 @@ function clock() {
         month = "0" + date.getMonth();
     }
     if (day < 10) {
-        day = "0" + date.getDay();
+        day = "0" + date.getDate();
     }
     if (hour < 10) {
         hour = "0" + date.getHours();
